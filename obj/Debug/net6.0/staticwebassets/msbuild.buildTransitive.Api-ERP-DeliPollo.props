@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Api-ERP-DeliPollo.props" />
+</Project>
