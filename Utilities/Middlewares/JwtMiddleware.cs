@@ -2,6 +2,7 @@
 using Api_Almacen.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using System.Text.Json;
@@ -25,16 +26,13 @@ namespace Api_Almacen.Utilities.Middlewares
         public async Task InvokeAsync(HttpContext context, ITokenServices tokenServices)
         {
             var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            //var userName = await tokenServices.ValidateToken(token);
+
             if (token != null)
             {
                 await AttachUserToContext(context, token);
-                //context.Items["User"] = new BoxedValue<int>(1);
-                //_logger.LogInformation(context.Items["User"].ToString());
             }
             
             await _next(context);
-             
         }
 
         private async Task AttachUserToContext(HttpContext context, string token)
@@ -62,13 +60,16 @@ namespace Api_Almacen.Utilities.Middlewares
             }
             catch
             {
-                 context.Response.StatusCode = 401;
-                 var result = new { message = "Acceso no autorizado" };
-                 await context.Response.WriteAsJsonAsync(result);
-                
+                var result = new
+                {
+                    StatusCode = 401,
+                    Message = "Acceso no autorizado"
+                };
 
-                // Limpiar cualquier contenido de la respuesta existente
-                //await context.Response.Body.FlushAsync();
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                context.Response.ContentType = "application/json";
+                await context.Response.WriteAsync(JsonConvert.SerializeObject(result), Encoding.UTF8);
+                return;
             }
         }
     }

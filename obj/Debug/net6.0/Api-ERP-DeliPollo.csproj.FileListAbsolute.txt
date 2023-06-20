@@ -38,3 +38,44 @@ C:\Users\Admin\Desktop\Aplicacion Almacen\Api-Almacen\Api-Almacen\obj\Debug\net6
 C:\Users\Admin\Desktop\Aplicacion Almacen\Api-Almacen\Api-Almacen\obj\Debug\net6.0\Api-ERP-DeliPollo.pdb
 C:\Users\Admin\Desktop\Aplicacion Almacen\Api-Almacen\Api-Almacen\obj\Debug\net6.0\Api-ERP-DeliPollo.genruntimeconfig.cache
 C:\Users\Admin\Desktop\Aplicacion Almacen\Api-Almacen\Api-Almacen\obj\Debug\net6.0\ref\Api-ERP-DeliPollo.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\appsettings.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Api-ERP-DeliPollo.exe
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Api-ERP-DeliPollo.deps.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Api-ERP-DeliPollo.runtimeconfig.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Api-ERP-DeliPollo.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Api-ERP-DeliPollo.pdb
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.csproj.AssemblyReference.cache
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.AssemblyInfoInputs.cache
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.AssemblyInfo.cs
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.csproj.CoreCompileInputs.cache
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets\msbuild.Api-ERP-DeliPollo.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets\msbuild.build.Api-ERP-DeliPollo.props
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Api-ERP-DeliPollo.props
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Api-ERP-DeliPollo.props
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\scopedcss\bundle\Api-ERP-DeliPollo.styles.css
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.csproj.CopyComplete
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\refint\Api-ERP-DeliPollo.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.pdb
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\Api-ERP-DeliPollo.genruntimeconfig.cache
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\obj\Debug\net6.0\ref\Api-ERP-DeliPollo.dll
+C:\Users\Axel\Desktop\.NetCore\ApiERP\Api-ERP\bin\Debug\net6.0\Newtonsoft.Json.dll

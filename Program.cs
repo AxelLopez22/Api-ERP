@@ -47,6 +47,8 @@ app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseMiddleware<JwtMiddleware>();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers();
