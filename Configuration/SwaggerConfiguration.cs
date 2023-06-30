@@ -8,7 +8,7 @@ namespace Api_Almacen.Configuration
         {
             service.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi - Almacen", Version = "V1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi - ERP DeliPollo", Version = "V1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

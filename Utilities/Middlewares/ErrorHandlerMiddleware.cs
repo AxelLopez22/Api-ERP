@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using Microsoft.Extensions.Logging;
+using System.Net;
 using System.Text.Json;
 
 namespace Api_Almacen.Utilities.Middlewares
@@ -6,10 +7,12 @@ namespace Api_Almacen.Utilities.Middlewares
     public class ErrorHandlerMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ILogger<ErrorHandlerMiddleware> _logger;
 
-        public ErrorHandlerMiddleware(RequestDelegate next)
+        public ErrorHandlerMiddleware(RequestDelegate next, ILogger<ErrorHandlerMiddleware> logger)
         {
             _next = next;
+            _logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -21,26 +24,32 @@ namespace Api_Almacen.Utilities.Middlewares
             catch (Exception error)
             {
                 var response = context.Response;
-                response.ContentType = "application/json";
 
-                switch (error)
+                if (!response.HasStarted)
                 {
-                    case AppException e:
-                        // custom application error
-                        response.StatusCode = (int)HttpStatusCode.BadRequest;
-                        break;
-                    case KeyNotFoundException e:
-                        // not found error
-                        response.StatusCode = (int)HttpStatusCode.NotFound;
-                        break;
-                    default:
-                        // unhandled error
-                        response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                        break;
-                }
+                    response.ContentType = "application/json";
 
-                var result = JsonSerializer.Serialize(new { message = error?.Message });
-                await response.WriteAsync(result);
+                    switch (error)
+                    {
+                        case AppException e:
+                            response.StatusCode = (int)HttpStatusCode.BadRequest;
+                            break;
+                        case KeyNotFoundException e:
+                            response.StatusCode = (int)HttpStatusCode.NotFound;
+                            break;
+                        default:
+                            response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                            break;
+                    }
+
+                    _logger.LogError(error, error.Message, error.Data);
+                    var result = JsonSerializer.Serialize(new { 
+                        statusCode = response.StatusCode, 
+                        message = error?.Message,
+                        details = error?.StackTrace
+                    });
+                    await response.WriteAsync(result);
+                }
             }
         }
     }

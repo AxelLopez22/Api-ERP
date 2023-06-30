@@ -49,7 +49,6 @@ namespace Api_Almacen.Services
             }
 
             var tokenHandler = new JwtSecurityTokenHandler();
-            //var key = Encoding.ASCII.GetBytes(_config["LlaveJwt"]);
 
             try
             {
@@ -66,6 +65,8 @@ namespace Api_Almacen.Services
 
                 var jwtToken = (JwtSecurityToken)validatedToken;
                 var user = jwtToken.Claims.First(x => x.Type == "Usuario").Value;
+
+
 
                 response.IsSuccess = true;
                 response.Data = user;

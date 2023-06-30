@@ -1,10 +1,7 @@
 using Api_Almacen.Configuration;
 using Api_Almacen.Services;
 using Api_Almacen.Utilities.Middlewares;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using System.Text;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,9 +22,14 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddHttpContextAccessor();
 builder.Services.TokenConfig(configuration);
 builder.Services.SwaggerConfig(configuration);
 builder.Services.AddScoped<ITokenServices, TokenServices>();
+
+var logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).Enrich.FromLogContext().CreateLogger();
+
+builder.Logging.AddSerilog(logger);
 
 var app = builder.Build();
 
@@ -46,6 +48,10 @@ app.UseCors(MyAllowSpecificationsOrigins);
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseMiddleware<JwtMiddleware>();
+
+app.UseMiddleware<RouteMiddleware>();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
